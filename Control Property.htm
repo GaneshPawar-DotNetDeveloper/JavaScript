@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Reading value from control</title>
+</head>
+<body>
+ name : <input type="text" id="txt1" />
+    <p id="p1">this is paragraph text</p>
+    <div id="div1">
+         <span>this is span text</span>
+        <a href="http://www.google.com">Google.com</a>
+    </div>
+    <input type="button"value="show values" onclick="showValue()" />
+
+    <script>
+        function showValue() {
+            var v1 = document.getElementById('txt1').value;
+            console.log('textbox value :' + v1);
+            var v2 = document.getElementById('p1').innerText;
+            console.log('paragraph text is :' + v2);
+            var v3 = document.getElementById('div1').innerHTML;
+            console.log('div element is :' + v3);
+        }
+    </script>
+</body>
+</html>
