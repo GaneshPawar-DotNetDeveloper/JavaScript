@@ -1,0 +1,82 @@
+﻿ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var a = 11;
+        document.write(a + '</br>');
+        var b = 1234.45;
+        document.write(b + '<br>');
+        var bu = true;
+        document.write(bu + '<br>');
+        var s = 'ganesh';
+        var p = '    pawar';
+        document.write(s + ' ' + p + '<br>')
+        var e = s + ' ' + p.trim() 
+        document.write(e + '<br>');
+       /* var w = s.concat(' ', s2);
+        document.write(w + '<br>');*/
+
+        var s1 = s.length;
+        document.write(s1 + '<br>'); 
+
+        // write string value in single and double cot:
+        var q = "'ganesh'";
+        document.write(q + '<br>');
+        document.write(q.toUpperCase() + '<br>');
+        document.write(q.toLowerCase() + '<br>');
+        var fn = 'suraj';
+        var ln = 'pawar';
+        var fullname = `full name : ${fn} ${ln} <br>`;
+        document.write(fullname);
+        var r = 10, t = 12;
+        var addition = `Addition is : ${r} + ${t} = ${r + t}`;
+        document.write(addition + '<br>');
+        var d = 'pruthviraj';
+        var o = d.indexOf('r');
+        document.write(`index is :${o}` + '<br>');
+        var p = d.lastIndexOf('r');
+        document.write(`last insex is : ${p}` + '<br>');
+        var gp = 'ganeshpawar1021@gmail.com';
+        // user name= ganeshpawar1021
+        // Domain name= gmail.com
+        var result = gp.substring(0, 15);
+        document.write(`substring result is ${result} <br>`);
+        var result = gp.slice(0, 15);
+        document.write(`slice result is ${result} <br>`);
+        var result = gp.substr(0, 15);
+        document.write(`substr result is ${result} <br>`);
+        /* document.write(<hr/>);*/
+       // I want some space/ horizontal line.
+
+
+        var result = gp.substring(15,0);
+        document.write(`substring result is ${result} <br>`);
+        var result = gp.slice(15,0);
+        document.write(`slice result is ${result} <br>`);
+        var result = gp.substr(  15,0);
+        document.write(`substr result is ${result} <br>`);
+
+        var result = gp.substring(5, 10);
+        document.write(`substring result is ${result} <br>`);
+        var result = gp.slice(5, 10);
+        document.write(`slice result is ${result} <br>`);
+        var result = gp.substr(5, 10);
+        document.write(`substr result is ${result} <br>`);
+
+        var email = 'surajpcool9623@gmail.com';
+        var index = email.indexOf('@');
+        document.write(index + '<br>');
+        var username = email.substring(0, index);
+        document.write(`username is : ${username} <br>`);
+        var domain = email.substring(index + 1, email.length);
+        document.write(`domain is : ${domain} <br>`);
+
+        document.write(`email is ${email} <br/> username is ${username} <br/> domain is : ${domain} <br>`);
+    </script>
+</head>
+<body>
+   <h1>Datatypes</h1>
+</body>
+</html>

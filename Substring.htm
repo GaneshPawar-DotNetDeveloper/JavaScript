@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="text" id="emailid" />
+    <input type="button" value="get user name and domain" onclick="process()" />
+    <br />
+
+    username : <label id="usernameid"></label>
+    <br />
+    domain: <lebel id="domainid"></lebel>
+
+    <script>
+        function process() {
+            var email = document.getElementById("emailid").value;
+            document.getElementById("usernameid").innerText = email;
+            document.getElementById("domainid").innerText = email;
+
+
+        }
+    </script>
+</body>
+</html>

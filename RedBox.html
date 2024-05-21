@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+   name: <input type="text" id="txt1" />
+
+    <p id="p1"></p>
+
+    <div id="div"></div>
+<br />
+    <input type="button" value="showvalue" onclick="validateInput()" />
+    <script>
+        function validateInput() {
+            debugger;
+            var v1 = document.getElementById('txt1').value;
+
+            if (v1 == ' ' || v1 == undefined) {
+                document.getElementById('txt1').style.border = '5px solid red';
+            }
+            else {
+                document.getElementById('txt1').style.border = '5px solid black';
+            }
+
+
+        }
+        function showvalue() { 
+            document.getElementById('txt1').value = 'ganesh';
+            document.getElementById('p1').innerText = 'hello ganesh pawar ';
+            document.getElementById('div1').innerHTML = ' <span>this is a span text</span>   <a href="http://www.google.com">google</a>';
+
+        }
+    </script>
+
+</body>
+</html>
