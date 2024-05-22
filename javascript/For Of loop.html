@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> For Of loop</h1>
+    <p id="demo"></p>
+    <div id="demos"></div>
+    <script>
+        // for/of - loops through the values of an iterable object
+
+        var cars = ["BMW", "Volvo", "Mini"];
+
+        var text = "";
+        for (var key of cars) {
+            text += key + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+
+        document.write('<hr>');
+
+        var language = "JavaScript";
+
+        var text = "";
+        for (var key of language) {
+            text += key + "<br>";
+        }
+
+        document.getElementById("demos").innerHTML = text;
+    </script>
+   
+</body>
+</html>

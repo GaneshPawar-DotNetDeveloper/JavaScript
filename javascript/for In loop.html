@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>for In loop </h1>
+    <div id="demo"></div>
+    <script>
+        // for/in - loops through the properties of an object
+
+        var person = { fname: "John", lname: "Doe", age: 25 };
+
+        var txt = "";
+        for (var key in person) {
+
+            txt += person[key] + '  ';
+        }
+
+        document.getElementById("demo").innerText = txt;
+
+
+        var numbers = [45, 4, 9, 16, 25];
+
+        var txt = "";
+        for (var key in numbers) {
+            txt += numbers[key] + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+
+
+        var numbers = [45, 4, 9, 16, 25,12];
+
+        var txt = "";
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myFunction(value) {
+            txt += value + "<br>";
+        }
+    </script>
+   
+</body>
+</html>
