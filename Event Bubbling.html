@@ -1,0 +1,55 @@
+﻿ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+            
+        #div1 {
+            border:1px solid black;
+            height:200px;
+            width:50%;
+
+        }
+        #span1 {
+            border: 1px solid black;
+            height: 100px;
+            width: 100%;
+            margin:50px;
+            padding: 0px,10px ,0px,10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1> this page for Event bubbling:</h1>
+    <div id="div1">
+        div1
+        <span id="span1">
+            span
+            <input type="button"value="submit" id="btn1" />
+        </span>
+
+    </div>
+    <script>
+        div1.addEventListener('click', divclick, false);
+        span1.addEventListener('click',spanclick,false);
+       btn1.addEventListener('click', btnclick, false);
+
+        function divclick(event) {
+            event.stopPropagation();  // prevent event bubbling
+            alert('div Clicked');
+        }
+        function spanclick(event) {
+            event.stopPropagation();// prevent event bubbling
+            alert('span Clicked');
+        }
+        function btnclick(event) {
+            event.stopPropagation(); // prevent event bubbling
+            alert('btn Clicked');
+        }
+
+    </script>
+</body>
+</html>

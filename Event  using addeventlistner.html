@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> events: using special method like addEventListner</h1>
+    <button id="btn">click me </button> <br />
+    <label id="message"></label>
+    <script>
+        var btn = document.getElementById('btn');
+       btn.addEventListener('click', btnclick, false);
+       // btn.attachEvent('onclick',btnclick,false);
+        function btnclick() {
+            document.getElementById('message').innerText = 'botton clicked';
+        }
+    </script>
+</body>
+</html>

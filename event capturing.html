@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> this page for Event capturing:</h1>
+    <div id="div1">
+        div1
+        <span id="span1">
+            span
+            <input type="button" value="submit" id="btn1" />
+        </span>
+
+    </div>
+    <script>
+        div1.addEventListener('click', divclick, true);
+        span1.addEventListener('click', spanclick, true);
+        btn1.addEventListener('click', btnclick, true);
+
+     function divclick(event) {
+         event.stopPropagation();
+         alert('div Clicked');
+     }
+        function spanclick(event) {
+            event.stopPropagation();
+
+         alert('span Clicked');
+     }
+        function btnclick(event) {
+         event.stopPropagation();
+
+         alert('btn Clicked');
+     }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>error handling function </h1>
+    <script>
+       
+        try {
+            NonExistingFunction();
+        }
+        catch (e) {
+            document.write('error handle by using try-catch block <br>');
+        }
+        finally {
+            document.write('using finnally for execution :  its give garranty of execution <br> ');
+        }
+        document.write('js Executed Successfully <br>');
+
+        
+
+        window.onerror = function (msg, url, line) {
+            document.write(msg + '<br>');
+            document.write(url + '<br>');
+            document.write(line + '<br>');
+             NonExistingFunction(); // this line for continues/next method call.
+
+            return true;// it remove exception in console developer tool.
+
+
+        }
+
+        existingfunction();
+        function NonExistingFunction() {
+            document.write('nonExecutionFunction called : <br>');
+        }
+
+        
+    </script>
+</body>
+</html>

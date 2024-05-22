@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+     <h1> this page for error handling</h1>
+<script>
+       //  error handling : it is talking about exceptions.
+       // in that error handling their are the some types of error handling.
+       // 1. try-catch block.
+       // 2. Onerror event : which is on windows. object=
+        // so windows.onerror event :
+   /* try {
+        NotExistingFunction(); // it is calling
+
+    } catch {
+        document.write('something wrong, please contact to admin <br>');
+    }
+    // in javaScipt there is no finally block.
+
+
+    // for global error handling we use windows.onerror function.
+    document.write('<hr>');*/
+
+    window.onerror = function (msg,url,line) {
+        document.write(msg + '<br>');
+        document.write(url + '<br>');
+        document.write(line + '<br>');
+    }
+    notexistingfunction(); // call function
+</script>
+
+
+</body>
+</html>

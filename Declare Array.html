@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        // Array declare:
+        //in javascript we declare araays in two ways:
+        /*var v1 = [];
+        var v2 = new array();*/
+        var s1 = [];
+        document.write(s1.length + '<br>');
+        var s2 = new Array();   // here [] is case sensitive so please write like Array not array
+        document.write(s2.length + '<br>');
+        var s1 = [12, 23, 34, 53, 443];
+        document.write(s1[2] + '<br>');
+        var s2 = new Array(10, 20, 30, 40, 40);
+        document.write(s2[4] +'<br>');
+
+        // if i want iterate it  so for that we use for loop:
+        document.write('all elements from array <br>');
+        for (var i = 0; i < s1.length; i++) {
+            document.write(s1[i]+'<br>');
+        }
+
+        document.write('Add element to array at end position <br>');
+        document.write('for that we use push function  <br>');
+        s1.push(40);
+        for (var i = 0; i < s1.length; i++) {
+
+            document.write(s1[i] + '<br>');
+        }
+        document.write('to remove and return last element <br>');
+        document.write('for that we use pop () function <br>');
+        var v1 = s1.pop();
+        document.write(` the last element is ${v1} <br>`);
+        for (var i = 0; i < s1.length; i++) {
+
+            document.write(s1[i] + '<br>');
+        }
+        document.write('Add element at first : for that we use unshift() function <br>');
+        var v2 = s1.unshift(23);
+        document.write(s1[0] + '<br>');
+      //  document.writeline(`remaining element of array is ${s1} <br>`);
+        document.write('to remove and return first element we can use shift function <br>');
+        var v3 = s1.shift();
+        document.write(s1 + '<br>');
+        document.write('all elements from array <br>');
+        for (var i = 0; i < s1.length; i++) {
+            document.write(s1[i] + '<br>');
+        }
+        document.write('To Add / to remove / to add multiple / to remove multiple : for that we use splice() function <br> ');
+        // To remove:
+        s1.splice(1, 1, 98);
+        for (var i = 0; i < s1.length; i++) {
+
+            document.write(s1[i] + '<br>');
+        }
+        // here we use (1,0,98)= 1 is index,0 is delete count,98 is adding element
+        // To add
+        document.write('<hr>');
+        s1.splice(1, 0, 123);
+        for (var i = 0; i < s1.length; i++) {
+
+            document.write(s1[i] + '<br>');
+        }
+        document.write('<hr>');
+
+        // to  remove multiple
+        s1.splice(1, 2);
+        for (var i = 0; i < s1.length; i++) {
+
+            document.write(s1[i] + '<br>');
+        }
+        document.write('<hr>');
+        // to add multiple:
+        s1.splice(1, 0, 12, 23, 43, 443, 34543);
+        for (var i = 0; i < s1.length; i++) {
+
+            document.write(s1[i] + '<br>');
+        }
+        document.write('<hr>');
+        // to add and remove multiple:
+        s1.splice(3, 2, 12, 343, 23)
+        for (var i = 0; i < s1.length; i++) {
+
+            document.write(s1[i] + '<br>');
+        }
+        document.write('<hr>');
+    </script>
+</body>
+</html>
