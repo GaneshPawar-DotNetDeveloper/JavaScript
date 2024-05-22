@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> 2. event : using dom object property</h1>
+    <input type="button"value="click me" id="btn1" />
+    <br />
+    <label id="lblmassage"></label>
+    <script>
+        document.getElementById('btn1').onclick = btnclick;
+
+        function btnclick() {
+            document.getElementById('lblmassage').innerHTML = 'button clicked';
+        }
+    </script>
+</body>
+</html>

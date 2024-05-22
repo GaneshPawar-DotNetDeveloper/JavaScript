@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>function arguments objects</h1>
+    <p>
+        we can use argument objects only inside function which contain all passed arguments while 
+        calling that function.
+    </p>
+    <script>
+        function add(a,b){
+            document.write(`${a}+${b}=${a + b} <br>`);
+            document.write(` number of argument passed : ${arguments.length} <br>`);
+            document.write('All Arguments : <br>');
+            for (i = 0; i < arguments.length; i++) {
+                document.write(`${arguments[i]} <br>`);
+            }
+        }
+        add(10, 30);
+        add(12, 34, 55, 34, 553, 4455);
+
+
+        document.write('<br>');
+        document.write('<br>');
+        document.write('default parameter : <br>');
+        function sum(a, b = 12) {
+            document.write(`${a}+${b}=${a+b} <br>`);
+        }
+       sum();
+        sum(10);
+       sum(10, 30);
+        document.write('<br>');
+        document.write('<br>');
+        document.write('this is rest parameter call :<br>');
+        function prints(...numbers) {
+            var sum = 0;
+            for (i = 1; i < numbers.length;i++) {
+                sum += numbers[i];
+            }
+            document.write(` sum : ${sum} <br>`);
+        }
+        prints(10, 20, 30, 30, 30);
+
+    </script>
+</body>
+</html>

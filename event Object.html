@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> this page for the event object</h1>
+    <input type="button"value="I am a button" id="btn" />
+    <hr />
+    <div style="background-color:orangered;height:300px;width:200px" id="div1" >
+
+    </div>
+
+    <input type="button"value="I am second button" id="btn1" />
+<br />
+ Action :   <textarea cols="100"rows="30" id="message"></textarea>
+    <script>
+        btn1.addEventListener('mouseover', genericEventhandler);
+        btn1.addEventListener('click', genericEventhandler);
+        btn1.addEventListener('mouseout', genericEventhandler);
+        btn1.addEventListener('mouseup', genericEventhandler);
+        btn1.addEventListener('mousedown', genericEventhandler);
+       
+       // btn1.addEventListener('click', genericEventhandler);
+
+        btn1.addEventListener('contextmenu', genericEventhandler);
+        div1.addEventListener('mouseup', mouseclick)
+        var message = document.getElementById('message');
+         message.value = '';
+        function genericEventhandler(event) {
+            message.value += `event name := ${event.type}\n`;
+            message.value += `tag name := ${event.target.tagName}  tag type :=  ${event.target.type}\n`;
+            message.value += `X := ${event.clientX} Y := ${event.clientY}\n`
+        }
+        function mouseclick(event) {
+            // message.value+=`which event :${event.which}\n `
+            message.value += `which code :${event.which} button name :- ${GetbuttonName(event.which)}\n `
+        }
+        function GetbuttonName(code) {
+            switch (code) {
+                case 1:
+                    return "left button";
+                case 2:
+                    return 'middle button';
+                case 3:
+                    return 'right buton';
+                default:
+                    return 'unknown';
+            }
+        }
+    </script>
+</body>
+</html>

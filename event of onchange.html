@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> Input Events</h1>
+    <input type="text" id="txt" onfocus="txtfocus()" onblur="txtblur()" onkeyup="txtkeyup(event)" />
+    <hr />
+    <textarea id="result" rows="10"cols="199"></textarea>
+    <h2> onchange event</h2>
+    select city :
+    <select id="city" onchange="citychange()">
+        <option value="-1">--select city--</option>
+        <option value="pune">pune</option>
+        <option value="mumbai">mumbai</option>
+        <option value="nashik">nashik</option>
+        <option value="latur">latur</option>
+        <option value="satara">satara</option>
+    </select>
+    
+    <span id="cityerror" style="color:red"></span>
+    <script>
+        var result = document.getElementById('result');
+        result.value = '';
+        function citychange() {
+            var selectedcity = document.getElementById('city').value;
+            if (selectedcity == '-1') {
+                result.value += 'please select city \n';
+                document.getElementById('cityerror').innerText = 'please select city'; 
+            }
+            else {
+                result.value += 'selected city is : '+selectedcity + '\n';
+            }
+        }
+    </script>
+</body>
+</html>

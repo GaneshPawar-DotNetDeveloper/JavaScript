@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var number = [1, 3, 4, 5, 3, 2, 4, 68, 56]
+        document.write('***all numbers are*** <br>');
+        for (i = 0; i < number.length; i++) {
+            document.write(number[i] +'<br>');
+        }
+        var fil = number.filter(logic);
+        document.write('***all filter even numbers are*** <br>');
+        for (i = 0; i < fil.length; i++) {
+            document.write(fil[i] + '<br>');
+        }
+        function logic(value, index, array) {
+            if (value % 2 == 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        document.write('for unique numbers we can filter:<br>');
+        var uniq = number.filter(uniquelogic);
+        for (i = 0; i < uniq.length; i++) {
+            document.write(uniq[i]+''+'<br>'
+            )
+        }
+        function uniquelogic(value, index, array) {
+            var i = array.indexOf(value); 
+            if (i == index) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

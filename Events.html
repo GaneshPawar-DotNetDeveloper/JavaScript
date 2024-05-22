@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>this page for Events</h1>
+
+    <ul  style="text-align:center">
+        <li style="background-color:orange"> types of events</li>
+        <li>  using HTML Attribute</li>
+        <li>using DOM object property</li>
+        <li>  using special method like AddEventListener , removeAddLister</li>
+        
+    </ul>
+
+    <button id="btn" onclick="btnclick()"> 1.click me </button>
+    <br />
+    <label id="msgs">
+
+    </label>
+
+    <script>
+        function btnclick() {
+            //document.write('button clicked');
+            document.getElementById('msgs').innerHTML = 'button clicked';
+        }
+    </script>
+</body>
+</html>
