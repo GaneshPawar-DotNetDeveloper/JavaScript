@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> this page for  diasable breoser default action:</h1>
+    <a href="http://www.google.com" target="_blank" onclick="return false;"> google.com</a>
+
+    <script>
+        // browser default diasable action means = use access karane mat de,right ckick karake usko copy-paste
+        // karane mat de .
+
+        //document.oncontextmenu = disableRightClick;
+        document.addEventListener('contextmenu', disableRightClick);
+        document.oncontextmenu = disableRightClick;
+        function disableRightClick(event) {
+            event = event || window.Event;
+            if (event.preventDefault) {
+                event.returnvalue = false
+            }
+            else {
+                event.returnvalue=false
+            }
+        }
+    </script>
+
+</body>
+</html>

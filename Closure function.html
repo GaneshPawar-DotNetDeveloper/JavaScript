@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> this page for closure function</h1>
+
+    - function within function  <br />
+    - outer functon inner function  <br />
+    - inner function can access outer function local variables and parameters.
+    <br />
+    <script>
+        function addition(a, b) {
+            var mgs = 'addition is :';
+            function add() {
+                return mgs + (a + b);
+            }
+            return add();
+        }
+        var r1 = addition(10, 10);
+        document.write(r1);
+        document.write('<hr>');
+        document.write('Interview Questions : <br>');
+
+        document.write('multiply(10,20,30) : answer is  <br>');
+
+        function multiplyA(a, b, c) {
+            return a * b * c;
+        }
+            var r1 = multiplyA(10,20,30);
+        document.write('multiply : ' + r1);
+        document.write('<hr>');
+
+        document.write('multiply (10)(20)(30) <br>');
+
+        function multiply(a) {
+            function multiply1(b) {
+                function multiply2(c) {
+                    return a * b * c;
+                }
+                return multiply2;
+            }
+            return multiply1;
+        }
+        var r2 = multiply(10) (20) (30);
+        document.write( 'the second multiply value is ' + r2 +'<br>');
+
+    </script>
+</body>
+</html>
