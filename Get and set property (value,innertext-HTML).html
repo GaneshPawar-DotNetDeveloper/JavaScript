@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2> Get and Set Property</h2>
+    <input type="text" id="txt" />
+    <p id="p1">paragraph text</p>
+    <div id="div1">
+        <span id="span">sapan content</span>
+        <!--<a href="http://www.google.com" >visit google</a>-->
+        <a id="a1"></a>
+    </div>
+    <hr />
+    <input type="button"value="get content" onclick="getcontent()" />
+    <input type="button"value="set content" onclick="setcontent()" />
+    <input type="text"id="txt1" />
+    <p id="p2"></p>
+    <div id="div2"></div>
+    <script>
+
+        // there are get and set properties are :
+      /*  1. value
+        2. innerext
+         3. innerHTML*/
+         // input element : text-box,radio button,select,button == inse hume value milega;
+         // p,pre == inse value nahi milega.
+
+        function getcontent() {
+
+            var t1 = document.getElementById('txt').value;
+            console.log(t1);
+            var p1 = document.getElementById('p1').value;
+            console.log(p1);
+            var d1 = document.getElementById('div1').value;
+
+            console.log(d1);
+            document.getElementById('a1').setAttribute('href', 'http://www.google.com');
+
+           /* document.write('<hr>');
+            document.write('<hr>');*/
+             var t1 = document.getElementById('txt').innerText;
+            console.log(t1);
+            var p1 = document.getElementById('p1').innerText;
+            console.log(p1);
+            var d1 = document.getElementById('div1').innerText;
+            console.log(d1);
+
+            /*document.write('<hr>');
+            document.write('<hr>');*/
+
+
+            var t1 = document.getElementById('txt').innerHTML;
+            console.log(t1);
+            var p1 = document.getElementById('p1').innerHTML;
+            console.log(p1);
+            var d1 = document.getElementById('div1').innerHTML;
+            console.log(d1);
+
+
+
+        }
+        function setcontent() {
+            document.getElementById('txt1').value = 'ganesh';
+            document.getElementById('p2').innerText = 'this is paragraph content';
+            document.getElementById('div2').innerText = '<a href= http://www.google.com> visit google </a>';
+         //   document.getElementById('div2').innerHTML = '<a href= http://www.google.com> visit google </a>';
+        }
+    </script>
+
+</body>
+</html>

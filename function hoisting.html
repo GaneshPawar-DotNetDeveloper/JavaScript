@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> this is for function hoisting and variable hoisting</h1>
+
+    <script>
+        // we cann call function before its declaration.
+        Add();
+        function Add() {
+            document.write('function hoisting called');
+        }
+
+        document.write('<hr>');
+
+        function add(){
+            document.write('variable hoisting value is : ' + a);
+           var a = 10;
+        }
+        add();
+    </script>
+</body>
+</html>

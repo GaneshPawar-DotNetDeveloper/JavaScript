@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> Input Events</h1>
+    <input type="text"id="txt" onfocus="txtfocus()"onblur="txtblur()"onkeyup="txtkeyup(event)" />
+    <hr />
+    <textarea cols="100" rows="05" id="result"></textarea>
+    <script>
+        var result = document.getElementById('result');
+        result.value = '';
+        function txtfocus() {
+            result.value += 'start typing....\n';
+        }
+        function txtblur() {
+            result.value += 'stop typing....\n';
+
+        }
+       /* function txtkeyup(event) {
+            result.value += `${event.keyCode}\n`;
+            var digitcode = [54,55,56,57,58,100, 101, 102, 103, 104, 105];
+            if (digitcode.indexOf(event.keyCode) >= 0) {
+                result += 'number not allowed\n';
+            }
+
+        }*/
+
+
+        // we write that function for when we enter some numbers in textbox so they not allow numbers.
+       /* function txtkeyup(event) {
+            var input = document.getElementById('txt');
+            var digitcode = [54, 55, 56, 57, 58, 100, 101, 102, 103, 104, 105];
+            if (digitcode.indexOf(event.keyCode) >= 0) {
+                input.value = input.value.substring(0, input.value.length - 1);
+
+                result += 'number not allowed\n';
+            }
+            else {
+                result.value += `${event.keyCode}\n`;
+            }
+
+        }*/
+        function txtkeyup(event) {
+            var input = document.getElementById('txt');
+            var digitcode = [54, 55, 56, 57, 58, 100, 101, 102, 103, 104, 105];
+            if (digitcode.indexOf(event.keyCode) >= 0) {
+                input.value = input.value.substring(0, input.value.length - 1);
+                result.value += 'number not allowed\n';
+            }
+            else {
+                input.value += `${event.keyCode}\n`;
+            }
+        }
+
+
+
+    </script>
+
+</body>
+</html>

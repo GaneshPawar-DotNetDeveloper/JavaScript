@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    name:<input type="text" id="txtEmail" /> <br />
+    <br />
+    <input type="button" value="Get UserName & Domain" onclick="process()" />
+    <br />
+    <br />
+    username: <label id="lbl"></label>
+    <br />
+    <br />
+    domain: <label id="dom"></label>
+
+    <script>
+        function process() {
+            var Email = document.getElementById('txtEmail').value;
+
+            /*document.getElementById('lbl').innerText = Email;
+            document.getElementById('dom').innerText = Email;*/
+            var index = Email.indexOf('@');
+            var username = Email.substring(0, index);
+            document.getElementById('lbl').innerText = username;
+
+            var domain = Email.substring(index + 1, Email.length);
+            document.getElementById('dom').innerText = domain;
+        }
+    </script>
+</body>
+</html>

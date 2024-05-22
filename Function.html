@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<h1> we write a function here</h1>
+    <script>
+        function Add() {  // function declare/defination
+            document.write('Add() function called   + <br>');
+        }
+
+        Add();  // function call
+
+        // function always return a value :
+        var a = Add();
+        document.write('fuction result is:  ' + a +'<br>');
+
+        // for returning a value for that we use return statement:
+        function farm() {
+            document.write('farm function called <br>');
+            return 'ganesh';
+            document.write('return statement ke bad vali line execute nahi hogi');
+        }
+        var f = farm();
+        document.write('farm owner is : '+ f +'<br>');
+
+        // pass the parameters:
+        // in C# there are argument and parameter size will be same .
+        // but in JS there will be difference in argument and parameter.
+        function sum(a, b) {
+            document.write('Addition is : ' + (a + b) + '<br>');
+            return c1;
+        }
+        var c1 = sum(23, 43, 55, 65, 76); {
+            document.write('result is : ' + c1 + '<br>');
+
+        }
+        document.write('find how many argument are there: <br>');
+        function addition(a, b) {
+            document.write(' total arguments are :' + arguments.length + '<br>');
+            for (i = 0; i < arguments.length; i++) {
+                document.write(arguments[i] + ' ');
+            }
+            document.write('<br>');
+        }
+        var v3 = addition(10, 20, 30, 340, 45, 565,);
+
+    </script>
+</body>
+</html>

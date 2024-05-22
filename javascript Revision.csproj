@@ -1,0 +1,190 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CB6052E-423F-4168-9CFB-F5DD0230D7EC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>javascript_Revision</RootNamespace>
+    <AssemblyName>javascript Revision</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44345</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Addition Of Two Number.html" />
+    <Content Include="Array in JS.html" />
+    <Content Include="ArrayFunctions reverse,sort,filter.html" />
+    <Content Include="ArrayInJS.html" />
+    <Content Include="boarder Red.html" />
+    <Content Include="Browzer Default Action.html" />
+    <Content Include="Closure function.html" />
+    <Content Include="codechef task.html" />
+    <Content Include="conditionalStatements.html" />
+    <Content Include="Console Result.html" />
+    <Content Include="Create Own Tag.html" />
+    <Content Include="dateInJS.html" />
+    <Content Include="Debugging JS File.html" />
+    <Content Include="Declare Array.html" />
+    <Content Include="Error handling.html" />
+    <Content Include="ErrorHandling2.html" />
+    <Content Include="Event  using addeventlistner.html" />
+    <Content Include="Event Bubbling.html" />
+    <Content Include="event capturing.html" />
+    <Content Include="event for key board.html" />
+    <Content Include="event Object.html" />
+    <Content Include="event of onchange.html" />
+    <Content Include="event using dom property.html" />
+    <Content Include="Events.html" />
+    <Content Include="filtering array.html" />
+    <Content Include="Function %28Arrow function%29.html" />
+    <Content Include="function arguments objects.html" />
+    <Content Include="function hoisting.html" />
+    <Content Include="function multiply interview Q.html" />
+    <Content Include="Function.html" />
+    <Content Include="functionWays.html" />
+    <Content Include="Get and set property %28value,innertext-HTML%29.html" />
+    <Content Include="GetDomain&amp;UserName.htm" />
+    <Content Include="images\farm.jpg" />
+    <Content Include="images\ramkrushna math logo.png" />
+    <Content Include="inputEvents.html" />
+    <Content Include="javascript\date.js" />
+    <Content Include="javascript\for In loop.html" />
+    <Content Include="javascript\For Of loop.html" />
+    <Content Include="javascript\slide Show.js" />
+    <Content Include="javascript\timeEvent.js" />
+    <Content Include="js Intro.htm" />
+    <Content Include="local &amp; global 2.htm" />
+    <Content Include="Local&amp;Global.htm" />
+    <Content Include="Looping Statement.html" />
+    <Content Include="map array.html" />
+    <Content Include="mouse event.html" />
+    <Content Include="Network testing.html" />
+    <Content Include="password show - hide.html" />
+    <Content Include="prevent default action.html" />
+    <Content Include="prompt Function%28%29.html" />
+    <Content Include="redirection.html" />
+    <Content Include="regular Expression.html" />
+    <Content Include="separate domain and username.html" />
+    <Content Include="session detail.html" />
+    <Content Include="session storage%28create page%29.html" />
+    <Content Include="SetTimeout Function.html" />
+    <Content Include="slide Show Function.html" />
+    <Content Include="sort array.html" />
+    <Content Include="String variable.html" />
+    <Content Include="StringFunction.html" />
+    <Content Include="style without id- with atrribute.html" />
+    <Content Include="SubStrings.html" />
+    <Content Include="timing Event.html" />
+    <Content Include="validation for Email.html" />
+    <Content Include="validation for name.html" />
+    <Content Include="value property.htm" />
+    <Content Include="value,inner-Text,HTML.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62023</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44345/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
