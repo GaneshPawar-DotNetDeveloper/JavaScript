@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        // array is use for collection
+
+        // syntax 1:
+        var number1 = [];
+        document.write(`number1 size: ${number1.length} <br>`);
+        var number2 = new Array(); // here array is case sensitive 
+        document.write(`number2 size : ${number2.length} <br>`);
+         var number1 = [1,2,3,4,5];
+        document.write(`number1 size: ${number1.length} <br>`);
+        var number2 = new Array(10,20,30,40,50); // here array is case sensitive 
+        document.write(`number2 size : ${number2.length} <br>`);
+
+
+        document.write('<hr>');
+        // difference between array i c# and Js.
+
+        // -- in c# array is similar data type.
+        // in js array get all type collection and it is growable.
+        var s = [10, 20, 30, 40, 'ganesh', 'pawar'];
+        for (i = 1; i < s.length; i++) {
+            document.write(` ${s[i]} <br>`);
+
+
+        }
+        document.write('********* adding new array items**********' +'<br>');
+        s[8] = 'suraj';
+        for (i = 1; i < s.length; i++) {
+            document.write(` ${s[i]} <br>`);
+        }
+    </script>
+</body>
+</html>
