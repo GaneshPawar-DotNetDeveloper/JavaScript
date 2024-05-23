@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>this is settimrout page</h1>
+    <div id="divtime"></div>
+    <input type="button" value="start clock" onclick="startclock()" />|
+    <input type="button" value="stop clock" onclick="startclock()" />
+
+
+    <script>
+        function startclock() {
+            intervalId = setTimeout(setTime, 5000);
+        }
+        function stopclock() {
+            clearTimeout(intervalId);
+        }
+        function setTime() {
+            var date = new Date();
+            document.getElementById('divtime').innerHTML = date;
+        }
+        setTime();
+
+    </script>
+</body>
+</html>

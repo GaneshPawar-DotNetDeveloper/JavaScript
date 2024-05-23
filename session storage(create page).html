@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2> create page</h2>
+    <table>
+        <tr>
+            <td>
+                name :
+            </td>
+            <td>
+                <input type="text" id="txt" />
+            </td>
+        </tr>
+        <tr><td>Email:</td><td><input type="text"id="email" /></td></tr>
+        <tr>
+            <td><input type="button"value="redirect to Details" onclick="detailspage()" /></td>
+        </tr>
+    </table>
+    <script>
+        function detailspage() {
+            var n = document.getElementById('txt').value;
+            var e = document.getElementById('email').value;
+
+
+            // seting data on browser :
+            sessionStorage.setItem('empname',n);
+            sessionStorage.setItem('empemail', e);
+
+            localStorage.setItem('sname', n);
+            localStorage.setItem('semail', e);
+
+
+            window.open('session detail.html','_self');
+        }
+    </script>
+</body>
+</html>
