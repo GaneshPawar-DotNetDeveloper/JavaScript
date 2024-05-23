@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+        <h3> Local & Global variable</h3>
+    <br />
+    <div> - if use var keyword variable in function then its local variable. </div>
+    <div>- if we use var keyword variable in outsite of afunction then it's global variable.
+    </div>
+    <div> if we use without var keyword variable in function then its global variable.</div>
+   
+</body>
+<script>
+    var a = 10; // global variable
+    
+    function fun1() {
+        var a = 20; // local variable
+        a = 30;  // global variable
+        console.log('value in fun1 is : ' + a);
+
+    }
+    function fun2() {
+        console.log('value in fun2 :' + a);
+
+    }
+    fun1();
+    fun2();
+</script>
+</html>

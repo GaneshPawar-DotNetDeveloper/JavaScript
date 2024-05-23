@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        /*
+          **Lopping Statement**
+
+          1. while loop
+          2. do while loop
+          3. for loop
+
+
+        */
+        // while loop :
+        var a = 1;
+        /* while (a <= 10) {`
+             document.write(` ${a} <br>`);
+             a++;
+         }
+         document.write('<hr>');
+     
+
+        while (a <= 0) {
+            document.write(a + '<br>');
+            a++;
+        }
+        document.write('<hr>');
+        do {
+            document.write(a + '<br>');
+            a++;
+        } while (a <= 10);
+        document.write('<hr>');*/
+
+        do {
+            document.write(a + '<br>');
+            a++;
+        } while (a <= 0);
+
+        document.write('<hr>');
+
+        // for loop :
+        for (var i = 1; i <= 10; i++) {
+            document.write(i + '<br>');
+
+        }
+        document.write('<hr>');
+        for (var i = 1; i <= 10; i++) {
+            if (i == 5) {
+                break; // terminate the loop
+            }
+            document.write(i + '<br>');
+        }
+        document.write('<hr>');
+
+        for (var i = 1; i <= 10; i++) {
+            if (i == 5) {
+                continue; // skip the current iteration and continues the next iteration
+            }
+            document.write(i + '<br>');
+        }
+        document.write('<hr>');
+        for (var i = 1; i <= 10; i++) {
+            if (i == 1) {
+                continue;
+            }
+            if (i == 2 || i == 7) {
+                break;
+            }
+            document.write(i + '<br>');
+
+        }
+        document.write('<hr>');
+
+        for (var i = 1; i <= 10; i++) {
+            if (i == 1) {
+                continue;
+            }
+            if (i == 2 && i == 7) {   // yaha yek time pe dono condition true nahi ho sakati
+                break;       // mhanaje jevha condition check hoil tevha 2 check karel pan 5 tasech rahil so that is false condition
+            }
+            document.write(i + '<br>');
+
+        }
+        document.write('<hr>');
+
+    </script>
+</body>
+</html>
