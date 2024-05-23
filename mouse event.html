@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>event demo</h1>
+    <!-- <button id="btn" onmouseover="this.style.background=' lightgreen'"
+       onmouseout="this.style.background='none'"> click me !!!</button>-->
+  <!-- <button id="btn" onmouseover="btnmouseover()"
+    onmouseout="btnmouseout()"> click me !!!</button> -->
+    <!--that is html atrribute way to achive event.-->
+    <button id="btn">click button</button>
+    <input type="text" id="search"/>
+    <script>
+        // now we use Dom object property:
+      /*  document.getElementById('btn').onmouseover = btnmouseover;
+        document.getElementById('btn').onmouseout = btnmouseout;
+        document.getElementById('btn').onclick = btnonclick;
+        document.getElementById('search').focus();
+*/
+        // using special method : addeventlistner,removeeventlistner:
+        btn.addEventListener('mouseover', btnmouseover);
+        btn.addEventListener('mouseover', btnmouseover1);
+        btn.addEventListener('mouseout', btnmouseout);
+        btn.addEventListener('click', btnonclick);
+
+        // for change text of that button so we can write function for that:
+        function btnmouseover() {
+            var btn = document.getElementById('btn');
+            btn.style.background = 'lightblue';
+        }
+        function btnmouseover1() {
+            var btn = document.getElementById('btn');
+            btn.style.color = 'red';
+        }
+        function btnmouseout() {
+            var btn = document.getElementById('btn');
+            btn.style.background = 'orange';
+        }
+         function btnonclick() {
+             var btn = document.getElementById('btn');
+             btn.innerHTML = 'button clicked';
+             btn.style.background = 'green';
+        }
+
+
+    </script>
+
+</body>
+</html>

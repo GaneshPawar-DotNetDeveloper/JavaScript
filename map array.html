@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var numbers = [1, 2, 3, 4, 5, 6];
+        document.write('all numbers are : <br>');
+        for (i = 0; i < numbers.length; i++) {
+            document.write(numbers[i] +'<br>');
+        }
+        document.write('All mapping number is give square : <br>');
+        var numb = numbers.map(mapping);
+        for (i = 0; i < numb.length; i++) {
+            document.write(numb[i]+'<br>');
+        }
+        function mapping(value, index, array) {
+            
+            return value * value;
+        }
+    </script>
+
+</body>
+</html>
