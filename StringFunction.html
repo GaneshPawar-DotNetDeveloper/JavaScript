@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> String Function</h1>
+    Input:
+    <textarea rows="5" cols="100" id="input"></textarea> <br />
+    <br />
+    <button id="btn" onclick="btnclick()">click me!!</button> |
+    <button id="btn1" onclick="clearvalue()">clear me!!</button> |
+    <button id="btn1" onclick="ValidateName()">Validate Name</button> 
+    <br />
+    <br />
+    output:
+    <textarea rows="5" cols="100" id="output"></textarea>
+
+    <script>
+        function btnclick() {
+            var input = document.getElementById('input').value;
+            var output = document.getElementById('output');
+
+            // output.value = input.value;
+            // split words from input sentance.
+
+          /*  var words = input.split(' ');
+            for ( var i = 0; i < words.length; i++) {
+                output.value += `${words[i]}\n`; */
+                 
+
+                // replace one string to another string ('ganesh' to 'raj'):
+               /* var result = input.replace(/ganesh/gim, 'raj');
+                output.value = result;*/
+
+                // search in input
+               /* result = input.search('ganesh');
+                output.value = result; // its give the position of that word.*/
+
+               /* var words = input.split('ganesh'); // we can split that sentances nearly name ganesh.
+                for (var i = 0; i < words.length; i++) {
+                    output.value += `${words[i]}\n`; */
+
+                    // get numbers from input :
+             //   var result = input.search('\\d+');  // it's give only there number position
+              //  var result = input.match('\\d+');  // its give first match number.
+             //   var result = input.match(/\d+/g);  // its give all match digits numbers.
+               /* var result = input.match(/\d{2}/g);  // its give find only two-two digit numbers .(when one digit remaining then it skip that number)
+            output.value = result;  */
+
+            // to overcome that enter pattern every time,means insert /\d{2}. so for that we use regExp function.
+              /* var patterns = new RegExp('\\d+', 'g'); // this is object of regExp.
+                // check if string does not contain number.
+               var result = patterns.test(input); 
+                output.value = result;
+*/
+                 
+
+         //   }
+
+
+        }
+        function ValidateName() {
+            var input = document.getElementById('input').value;
+            var output = document.getElementById('output');
+
+            var pattern = new RegExp('\\d+', 'g');
+            if (!pattern.test(input)) {
+                output.value = 'valid name';
+            }
+            else {
+                output.value = 'name should not contain digit';
+            }
+
+        }
+
+        function clearvalue() {
+            var input = document.getElementById('input');
+            var output = document.getElementById('output');
+            input.value = '';
+            output.value = '';
+        }
+
+    </script>
+</body>
+</html>

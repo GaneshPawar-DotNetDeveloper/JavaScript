@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> string formats</title>
+</head>
+<body>
+    it is string variable formats <br />
+    <script>
+        var myvariable = 100;
+        //  document.write(myvariable + '<br />' ); 
+        alert(myvariable);
+        myvariable = "asign a string value";
+        //document.write(myvariable + '<br />');
+        alert(myvariable);
+
+        // 1. js consider "" or '' as a string value.
+        var s = 'ganesh';
+        var w = "suraj";
+        document.write(s + '<br>');
+        document.write(w + '<br>');
+        document.write(s.toUpperCase() +'<br>');
+        document.write(w.toLowerCase() + '<br>');
+        var q = "'raj'";
+        document.write(q + '<br>');
+        var e = '"pawar"';
+        document.write(e + '<br>');
+        var a = "\" pruthviraj \"";
+        document.write(a + '<br>');
+
+        document.write('<hr>');
+        // Adding two words:
+        var string1 = "   hello";
+        var string2 = "JavaScript";
+        var result = string1 + '  ' +string2; 
+        document.write(result + '<br>');
+        var result2 = string1.concat("       ", string2);
+        document.write(result2 + '<br>');
+
+        // find the length of string:
+        document.write('ganesh'.length + '<br>');
+
+        // for trim :
+        var result = string1.trim() + string2.trim();
+        document.write(result + '<br>');
+
+        // back tik operator:
+        var a = 10, b = 23;
+        document.write(`Addition of ${a} + ${b}= ${a + b} <br>`);
+
+        // for replacing any word (replace()):
+        var ab = "ganesh pawar";
+        var res = ab.replace("ganesh", "suraj");
+        document.write(res + '<br>')
+
+        var a = " ganesh pawar suraj pawar raj pawar";
+        var p = a.replace("pawar", "royal");
+        document.write(p + '<br>');
+
+        var s = a.replace(/pawar/g, "royal");
+        document.write(s + '<br>');
+        var q = "GANESH IS ganesh AND ALSO GANESH IS GANESH NOT A SURAJ OR SURAJ IS NOT A GANESH BECAUSE  GANESH IS GANESH ";
+        var pl = q.replace(/ganesh/g, "raj");
+        document.write(pl+ '<br>');
+        var q = "GANESH IS ganesh AND ALSO GANESH IS GANESH NOT A SURAJ OR SURAJ IS NOT A GANESH BECAUSE  GANESH IS GANESH ";
+        var pl = q.replace(/ganesh/gi   , "raj");
+        document.write(pl+ '<br>');
+
+        // for indexof:
+        var ao = "ganeshkp111@gmail.com";
+        var s = ao.indexOf('1');
+        document.write(s+'<br>');
+        var ao = "ganeshkp111@gmail.com";
+        var s = ao.lastIndexOf('1');
+        document.write(s+'<br>');
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
