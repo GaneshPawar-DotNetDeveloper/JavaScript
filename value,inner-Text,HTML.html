@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+   name : <input type="text" id="txt" />
+    
+    <h2 id="p1">this is second content</h2>
+    <div id="div1">
+        <p>hi, this is ganesh pawar</p> 
+        <a href="http://www.gf.com"></a>
+
+    </div>
+    <input type="button"value="show value" onclick="showvalue()" />
+    <script>
+        function showvalue() {
+            var v1 = document.getElementById('txt').value;
+            console.log(`value is :${v1} <br>`);
+            var v2 = document.getElementById('p1').innerText;
+            console.log(`inner Text is : ${v2} <br>`);
+            var v3 = document.getElementById('div1').innerHTML;
+            console.log(`inner HTML is: ${v3} <br>`);
+        }
+    </script>
+</body>
+</html>

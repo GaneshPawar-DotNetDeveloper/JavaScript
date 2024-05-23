@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Name: <input type="text" id="input1" />
+    <p id="p1">This is paragraph</p>
+    <div id="div1">
+        <span id="span1"> This is span text</span>
+        <a href="https://www.youtube.com/watch?v=nqprsWWz_ck" id="a1">Arjitsigh Songs</a>
+    </div>
+    <input type="button" value="Details" id="input2" onclick="AllDetails();" />
+    <script>
+        function AllDetails() {
+            var a = document.getElementById('input1').value;
+            console.log('textbox value:'+ a);
+            var b = document.getElementById('p1').ineerHTML;
+            console.log(b);
+            var c = document.getElementById('div1').innerHTML;
+            console.log(c);
+            var d = document.getElementById('span1').innerHTML;
+            console.log(d);
+            var e = document.getElementById('a1').innerHTML;
+            console.log(e)
+            var f = document.getElementById('input2').innerHTML;
+            console.log(f);
+        };
+    </script>
+</body>
+</html>

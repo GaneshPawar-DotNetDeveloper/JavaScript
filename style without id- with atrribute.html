@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<h2> this page for use attribute for styling purpose</h2>
+    <p> this is first paragraph</p>
+    <p> this is second paragraph</p>
+    <p> this is third paragraph</p>
+    <input type="button"value="change style"onclick="changeparastyle()" />
+    <script>
+        function changeparastyle() {
+            var para = document.getElementsByTagName('p');
+            para[1].style.backgroundColor = 'red';
+
+      // here we can not use name atrribute because we don't know which name we want ,bcs there are multiple name tags.
+
+        }
+    </script>
+</body>
+</html>

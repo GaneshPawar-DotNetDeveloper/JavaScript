@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Input:
+    <textarea rows="5" cols="100" id="input"></textarea> <br />
+    <br />
+    <button  onclick="ValidateName()"> submit Name</button>|
+    <button  onclick="Validatemobile()"> valid mobile number</button>
+    <br />
+    <br />
+    output:
+    <textarea rows="5" cols="100" id="output"></textarea>
+    <script>
+        function ValidateName() {
+            var input = document.getElementById('input').value;
+            var output = document.getElementById('output');
+
+          
+
+                var pattern = new RegExp('\\d+', 'g');
+                if (!pattern.test(input)) {
+                    output.value = 'valid name';
+                }
+                else {
+                    output.value = 'name should not contain digit';
+                }
+        }
+        function Validatemobile() {
+            var input = document.getElementById('input').value;
+            var output = document.getElementById('output');
+          // var pattern = new RegExp('\\d{10}', 'g');   // ye hume mandatary 10 number dalane bolega or 10 + bhi lega.
+          //  var pattern = new RegExp('\[789][0-9]{9}', 'g');
+              // '\[789][0-9]{9} == shurvat 789 se honi chahiye.
+                            //[0-9]  == digit ye 0-9 ke bich me hi honge.
+                            // {9}== number position will be 9 +.not less than 10. means it should be minimum 9.
+
+            var pattern = new RegExp('\[789][0-9]{9}$', 'g'); //{9}$== maximum 9 he chahiye.
+
+
+
+            if (!pattern.test(input)) {
+                output.value = 'Invalid mobile number';
+            }
+            else{
+                output.value = 'valid mobile number';
+            }
+        }
+    </script>
+</body>
+</html>
