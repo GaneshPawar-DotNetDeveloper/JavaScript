@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2> redirection technique</h2>
+    <br />
+    <a href="http://www.google.com" target="_blank">google.com</a> <br />
+    <a href="Events.html" target="  _blank" >events</a>
+    <br />
+    <br />
+    <br />
+    <input type="button"value="visit google" onclick="redirectpage()" />|
+    <input type="button"value="visit get- set content" onclick="redirectAnotherpage()" />
+
+    <script>
+        function redirectpage() {
+            window.open('http://www.google.com');
+        }
+        function redirectAnotherpage() {
+            window.open('map array.html','_self','mywindow','height:200px','width:150px',false);
+        }
+    </script>
+</body>
+</html>

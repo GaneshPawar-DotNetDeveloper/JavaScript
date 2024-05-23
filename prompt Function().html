@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<script>
+
+    var a = prompt('Please Enter A number');
+    if (a == 10) {
+        document.write('DUS');
+
+    }
+    else if (a == 20) {
+        document.write('TWENTY');
+
+    }
+    else if (a == 30) {
+        document.write('THIRTY');
+
+    }
+    else {
+        document.write('not be 10,20,30');
+    }
+    document.write('<hr>');
+
+    // ternary operator:
+    var v1 = (a == 10) ? 'DAHA' : 'DAHA NAHI'
+    document.write(v1 + '<br>');
+    document.write('<hr>');
+    // switch Statement:
+
+    switch (a) {
+        case 10:
+            document.write('case 10')
+            break;
+        case 20:
+            document.write('case 20');
+            break;
+        case 30:
+            document.write('case 30');
+            break;
+        default:
+            document.write('not case 10,20,30');
+            break;
+
+
+    }
+    document.write('<hr>');
+    document.write('<h1> === operator </h1>' + '<br>' +'<br>');
+
+    document.write('double equal to operator  but here we use one is int and second is string value ' + '<br>' + '<br>');
+    var a = 10;
+    var b = '10';
+    if (a == b) {
+        document.write('a & b are equal');
+
+    }
+    else {
+        document.write('a & b are  not equal');
+
+    }
+    document.write('<hr>');
+    document.write('triple equal to operator ' + '<br>');
+    if (a === b) {
+        document.write('a & b are equal');
+
+    }
+    else {
+        document.write('a & b are  not equal');
+
+    }
+
+    document.write('<br>');
+    document.write('<br>');
+    document.write('here == operator checks Only value \n \t but ==== operator checks value + type. ');
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body oncontextmenu="return false;" onblur="closeWindow()">
+    <h1> prevent browser default action</h1>
+    <div oncopy="return false;">
+        <span> this is span text</span>
+        <p> javascript is a most popular language</p>
+
+    </div>
+    Account Number : <input type="text" onpaste="return false;" /> <br />
+    <script>
+        // this function is used for we can go to another browser or another file then it close.
+        function closeWindow() {
+            window.close();
+        }
+    </script>
+</body>
+</html>
